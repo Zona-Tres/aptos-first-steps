@@ -1,3 +1,4 @@
+![banner](./recursos/imagenes/banner.png)
 # Primeros pasos en Aptos
 
 ## Introducción
