@@ -157,7 +157,7 @@ Te recomiendo usar el siguiente comando en vez del anterior:
 aptos help
 ```
 
-## Instalación en Windows <a id="linuxcli"></a>
+## Instalación en Linux <a id="linuxcli"></a>
 1. Asegurate de tener instalado **Python** 3.6 o superior. Para esto puedes abrir una terminal y correr el siguiente comando:
 ```
 python3 --version
