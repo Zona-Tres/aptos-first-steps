@@ -38,7 +38,7 @@ INCLUDING DEPENDENCY MoveStdlib
 BUILDING Intro
 Running Move unit tests
 [debug] "Hello, World!"
-[ PASS    ] 0x1337::practica_aptos::prueba
+[ PASS    ] 0x5a6f6e612054726573::practica_aptos::prueba
 Test result: OK. Total tests: 1; passed: 1; failed: 0
 {
   "Result": "Success"
@@ -64,7 +64,7 @@ module direccion::nombre_modulo {
     La dirección la encontramos en el archivo de configuraciones `Move.toml`, en el apartado de `addresses`. En nuestro caso:
     ```toml
     [addresses]
-    introduccion = "0x1337"
+    introduccion = "0x5A6F6E612054726573"
     ```
 3. Nombre del módulo, en nuestro caso: `practica_aptos`
 
@@ -115,7 +115,7 @@ INCLUDING DEPENDENCY MoveStdlib
 BUILDING Intro
 Running Move unit tests
 [debug] "Hello, World!"
-[ PASS    ] 0x1337::practica_aptos::prueba
+[ PASS    ] 0x5a6f6e612054726573::practica_aptos::prueba
 Test result: OK. Total tests: 1; passed: 1; failed: 0
 {
   "Result": "Success"
@@ -159,7 +159,7 @@ Después, obtenemos el mensaje que ejecuta la función prueba, en nuestro caso, 
 
 Ahora, en la siguiente línea, podemos obtener información de exactamente que funciones se ejecutaron:
 ```sh
-[ PASS    ] 0x1337::practica_aptos::prueba
+[ PASS    ] 0x5a6f6e612054726573::practica_aptos::prueba
 ```
 La estructura es algo así:
 ```rust
@@ -211,3 +211,5 @@ MMMMMMMMMMMN0o,.                            .,o0NMMMMMMMMMMM
 MMMMMMMMMMMMMMWKxl;..                  ..;lxKWMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMWKko:'.          .';okKWMMMMMMMMMMMMMMMMMM
 ```
+
+> :information_source: Recuerda guardar tus cambios en el archivo para posteriormente hacerles `push` a tu repositorio de **Github**.

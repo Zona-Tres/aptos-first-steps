@@ -3,7 +3,7 @@ name = "Intro"
 version = "0.0.0"
 
 [addresses]
-introduccion = "0x1337"
+introduccion = "0x5A6F6E612054726573"
 
 [dependencies.AptosStdlib]
 git = 'https://github.com/aptos-labs/aptos-core.git'

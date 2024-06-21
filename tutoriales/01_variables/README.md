@@ -39,7 +39,7 @@ Running Move unit tests
 [debug] 10
 [debug] 15
 [debug] false
-[ PASS    ] 0x1337::variables::prueba
+[ PASS    ] 0x5a6f6e612054726573::variables::prueba
 Test result: OK. Total tests: 1; passed: 1; failed: 0
 {
   "Result": "Success"

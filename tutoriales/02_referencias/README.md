@@ -28,7 +28,7 @@ Running Move unit tests
 [debug] 1
 [debug] 20
 [debug] 20
-[ PASS    ] 0x1337::referencias::prueba
+[ PASS    ] 0x5a6f6e612054726573::referencias::prueba
 Test result: OK. Total tests: 1; passed: 1; failed: 0
 {
   "Result": "Success"
