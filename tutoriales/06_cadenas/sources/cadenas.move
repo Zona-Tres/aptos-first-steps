@@ -1,6 +1,7 @@
 module aptosz3::cadenas {
     use std::debug::print;
     use std::string::{utf8, is_empty, append, append_utf8, insert};
+    use aptos_std::string_utils::{to_string, debug_string};
 
     fun practica() {
         // Cadenas
@@ -41,8 +42,16 @@ module aptosz3::cadenas {
         print(&cadena_utf8); // Resultado: [debug] "HolaINSERTAMEAdiosHello World!
                                               //            Esto se imprimira en una nueva linea."
 
+        // String utils
+        let numero = 100u16; // Podemos convertir variables a cadenas.
+        print(&to_string<u16>(&numero)); // Resultado: [debug] "100" Nota que se imprime como cadena, y no como numero.
+
+        let v: vector<u16> = vector[10, 20, 30]; // Tambien podemos convertir cosas mas complejas
+        print(&debug_string(&v)); // Resultado: [debug] "[ 10, 20, 30 ]" Nota: No funciona con u8.
+
         // Recuerda que puedes obtener informacion sobre las demos operaciones en:
         // https://github.com/aptos-labs/aptos-core/blob/main/aptos-move/framework/move-stdlib/doc/string.md
+        // https://github.com/aptos-labs/aptos-core/blob/main/aptos-move/framework/aptos-stdlib/doc/string_utils.md
     }
 
     #[test]

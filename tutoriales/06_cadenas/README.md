@@ -19,7 +19,28 @@ aptos move test
 
 Deberías de obtener el siguiente resultado:
 ```sh
-
+INCLUDING DEPENDENCY AptosStdlib
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING Cadenas
+Running Move unit tests
+[debug] 0x48656c6c6f20576f726c6421
+[debug] "Hello World!"
+[debug] 0x48656c6c6f20576f726c6421
+[debug] "Hello World!"
+[debug] true
+[debug] "Hola"
+[debug] "HolaAdios"
+[debug] "HolaAdiosHello World!"
+[debug] "HolaINSERTAMEAdiosHello World!"
+[debug] "HolaINSERTAMEAdiosHello World!
+Esto se imprimira en una nueva linea."
+[debug] "100"
+[debug] "[ 10, 20, 30 ]"
+[ PASS    ] 0x5a6f6e612054726573::cadenas::prueba
+Test result: OK. Total tests: 1; passed: 1; failed: 0
+{
+  "Result": "Success"
+}
 ```
 
 ## Tutorial
