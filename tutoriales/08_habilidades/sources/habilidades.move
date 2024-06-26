@@ -1,7 +1,4 @@
-module aptosz3::cadenas {
-    // use std::debug::print;
-    // use std::string::utf8;
-
+module aptosz3::habilidades {
     // drop
     struct Ignorame has drop { a: u8 }
     struct SinDrop { a: u8}
