@@ -1,0 +1,16 @@
+[package]
+name = "Almacenamiento Global"
+version = "0.0.0"
+
+[addresses]
+cuenta = "_"
+
+[dependencies.AptosStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-stdlib'
+
+[dependencies.MoveStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/move-stdlib'

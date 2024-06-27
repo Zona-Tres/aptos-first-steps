@@ -81,15 +81,28 @@ address aptosz3 { // Ahora usamos una nueva sintaxis, ya que vamos a tener disti
     }
 
     module funciones4 {
-        public entry fun funcion_entry() { // Por ultimo, el modificador entry es escencialmente lo que seria el modificador main en otros lenguajes
+        public entry fun funcion_entry() { // El modificador entry es esencialmente lo que seria el modificador main en otros lenguajes
             aptosz3::funciones1::funcion_publica(); // Son funciones que permiten que sean llamadas de manera segura e invocadas directamente.
 
             // No es un modificador restrictivo. Estas funciones pueden seguir siendo llamadas por otras funciones dentro del modulo.
+            // Las funciones entry son las funciones que vamos a poder llamar desde la terminal al momento de subir el codigo a la blockchain.
+            // Las funciones entry NO pueden regresar un valor.
         }
+
+        #[view] // Por ultimo, podemos tener funciones de lectura, se asignan con #view.
+        public fun funcion_lectura(): u16 { // Estas funciones tambien pueden ser llamadas desde la terminal.
+            200 // Las funciones view deben regresar un valor
+            // Dentro de este contexto no tienen mucho sentido, pero las tocaremos en la siguiente leccion.
+        }
+
+        #[test_only]
+        use std::debug::print;
 
         #[test]
         fun prueba() {
             funcion_entry(); // Resultado: [debug] "Hola desde funciones1!"
+            let a = funcion_lectura();
+            print(&a); // Resultado: [debug] 200
         }
 
         // Recuerda que puedes ver mas informacion sobre las funciones y sus declaraciones en la documentacion oficial del lenguaje Move:
