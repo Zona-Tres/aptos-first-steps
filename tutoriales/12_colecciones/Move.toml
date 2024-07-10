@@ -1,0 +1,16 @@
+[package]
+name = "Colecciones"
+version = "0.0.0"
+
+[addresses]
+aptosz3 = "0x5A6F6E612054726573"
+
+[dependencies.AptosStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-stdlib'
+
+[dependencies.MoveStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/move-stdlib'
