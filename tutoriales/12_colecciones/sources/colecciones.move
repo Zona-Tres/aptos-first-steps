@@ -5,7 +5,7 @@ address aptosz3 {
         use std::string::{String,utf8};
         use std::signer::address_of;
 
-        struct Tabla has key {
+        struct Tabla has key { // Dado a que utilizaremos este struct con operaciones del global_storage, necesita tener la habilidad key
             tabla: Table<String, u8> // Declaramos tipo
         }
 

@@ -12,7 +12,7 @@ En esta lección aprenderás a utilizar todas las operaciones del Global Storage
 Ingresa a tu terminal y ejecuta el siguiente comando:
 
 ```sh
-aptos move test
+aptos move test --named-addresses cuenta=0x5A6F6E612054726573
 ```
 
 Deberías de obtener el siguiente resultado:
