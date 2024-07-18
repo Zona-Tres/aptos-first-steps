@@ -124,6 +124,11 @@ Todos estos cambios son para poder trabajar con la cuenta `default`. En el `Move
 ### Publicando el paquete
 
 Vamos a publicar este paquete, corre este comando:
+```sh
+aptos move publish --named-addresses cuenta=default
+```
+
+Obtendrás algo como:
 
 ```sh
 Compiling, may take a little while to download git dependencies...
