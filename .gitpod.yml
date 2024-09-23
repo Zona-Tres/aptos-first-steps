@@ -1,13 +1,6 @@
 tasks:
   - init: |
       curl -fsSL "https://aptos.dev/scripts/install_cli.py" | python3
-      
-      apt-get update && apt-get install -y wget
-      wget https://github.com/move-language/move/archive/refs/heads/main.zip
-      unzip main.zip
-      cd move-main/language/move-analyzer
-      cargo install --path .
 vscode:
   extensions:
     - ms-python.python
-    - move.move-analyzer
